@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#navLinks a {
+	margin: 7px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#shop {
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+#shop-tees {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#world-a {
+	display: flex;
+	flex-direction: row;
+}
+
+#a-scrolls {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#a-scrolls a {
+	margin: 10px;
+	font-size: 1rem;
+}
+
+#home-world-col {
+	margin-top: 30px;
+}
+
+#character-card {
+	width: 100%;
+	border: none;
+}
+
+#playlist-group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#uncontrolled-tab-example-tab-kirk {
+	margin-right: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#uncontrolled-tab-example-tab-steve {
+	margin-right: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#uncontrolled-tab-example-tab-kms {
+	margin-right: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#uncontrolled-tab-example-tab-a {
+	margin-right: 10px;
+}
+
+#uncontrolled-tab-example-tab-g {
+	margin-right: 10px;
+}
+
+#uncontrolled-tab-example-tab-m {
+	margin-right: 10px;
+}
+
+#uncontrolled-tab-example-tab-t {
+	margin-right: 10px;
 }
