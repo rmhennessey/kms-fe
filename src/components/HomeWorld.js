@@ -90,7 +90,8 @@ const HomeWorld = () => {
 								},
 							}}
 						>
-							Welcome to The Miniverse
+							TESTING AGAIN
+							{/* Welcome to The Miniverse */}
 						</h2>
 						<h6
 							css={{
