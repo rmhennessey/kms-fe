@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Container } from 'react-bootstrap'
 import Loader from '../components/Loader'
 import NetworkCard from '../components/NetworkCard'
+import Meta from '../components/Meta'
 
 const Network = () => {
 	const [loading, setLoading] = useState(true)
@@ -30,6 +31,10 @@ const Network = () => {
 
 	return (
 		<div>
+			<Meta
+				title='KMS YouTube Network | Podcast Jesus'
+				description='The Kirk Minihane Show YouTube Network'
+			/>
 			<Container>
 				<h1
 					style={{

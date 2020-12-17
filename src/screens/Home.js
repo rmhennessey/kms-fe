@@ -7,10 +7,12 @@ import Testimonials from '../components/Testimonials'
 import ShopCarousel from '../components/ShopCarousel'
 import HomeWorld from '../components/HomeWorld'
 import WrapUpMain from '../components/WrapUpMain'
+import Meta from '../components/Meta'
 
 const Home = () => {
 	return (
 		<div>
+			<Meta />
 			<HomeWorld />
 			<WrapUpMain />
 			{/* <Ads /> */}
@@ -18,7 +20,6 @@ const Home = () => {
 			<YouTubeHome />
 			<Testimonials />
 			<ShopCarousel />
-			{/* <Hero /> */}
 		</div>
 	)
 }

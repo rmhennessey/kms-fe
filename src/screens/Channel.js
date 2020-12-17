@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Loader from '../components/Loader'
 import ChannelCard from '../components/ChannelCard'
+import Meta from '../components/Meta'
 
 const Channel = ({ match }) => {
 	const id = match.params.id
@@ -36,6 +37,10 @@ const Channel = ({ match }) => {
 
 	return (
 		<div>
+			<Meta
+				title='KMS YouTube Network | Podcast Jesus'
+				description='The Kirk Minihane Show YouTube Network'
+			/>
 			<Container style={{ display: 'flex', flexDirection: 'column' }}>
 				{/* <h1
 					style={{
