@@ -1,6 +1,7 @@
-// import React from 'react'
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga' //Google Analytics
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
+import { createBrowserHistory } from 'history'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './screens/Home'
@@ -11,13 +12,26 @@ import Watch from './screens/Watch'
 import Shop from './screens/Shop'
 import KirkFeed from './components/KirkFeed'
 import WrapUpMain from './components/WrapUpMain'
-// import Playlists from './components/Playlists'
 
 const App = () => {
-	return (
-		<Router>
-			<Header />
+	const history = createBrowserHistory()
 
+	useEffect(() => {
+		ReactGA.initialize('256563723')
+		ReactGA.pageview(window.location.pathname)
+		console.log('google analytic running')
+	})
+
+	// Initialize google analytics page view tracking
+	history.listen((location) => {
+		ReactGA.initialize('256563723')
+		ReactGA.set({ page: location.pathname }) // Update the user's current page
+		ReactGA.pageview(location.pathname) // Record a pageview for the given page
+	})
+
+	return (
+		<Router history={history}>
+			<Header />
 			<Route path='/' component={Home} exact />
 			<Route path='/miniverse' component={World} exact />
 			<Route path='/network' component={Network} exact />
@@ -26,8 +40,6 @@ const App = () => {
 			<Route path='/shop' component={Shop} exact />
 			<Route path='/kirk' component={KirkFeed} exact />
 			<Route path='/wrap' component={WrapUpMain} exact />
-			{/* <Route path='/playlists' component={Playlists} exact /> */}
-
 			<Footer />
 		</Router>
 	)
