@@ -8,7 +8,7 @@ const MToS = () => {
 	useEffect(() => {
 		const getCharacters = async () => {
 			const { data } = await axios.get(
-				'http://localhost:5000/api/characters/m-s'
+				'https://kms-be.herokuapp.com/api/characters/m-s'
 			)
 			setCharacters(data)
 		}

@@ -1,4 +1,8 @@
 node_modules
+/node_modules
+node_modules/
 
 # Local Netlify folder
 .netlify
+
+# to update site, delete BUILD folder, run `npm run build` and then run `netlify deploy --prod`

@@ -15,7 +15,9 @@ const KirkFeed = () => {
 
 	const getKirkData = async () => {
 		try {
-			const response = await axios.get(`http://localhost:5000/api/twitter/kirk`)
+			const response = await axios.get(
+				`https://kms-be.herokuapp.com/api/twitter/kirk`
+			)
 
 			// console.log('data---------->', data)
 			setKirkData(response)

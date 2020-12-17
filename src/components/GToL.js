@@ -8,7 +8,7 @@ const GToL = () => {
 	useEffect(() => {
 		const getCharacters = async () => {
 			const { data } = await axios.get(
-				'http://localhost:5000/api/characters/g-l'
+				'https://kms-be.herokuapp.com/api/characters/g-l'
 			)
 			setCharacters(data)
 		}

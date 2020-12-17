@@ -19,7 +19,7 @@ const WrapUpMain = () => {
 	useEffect(() => {
 		const getWrapUpShow = async () => {
 			const { data } = await axios.get(
-				'http://localhost:5000/api/youtube/wrap-up'
+				'https://kms-be.herokuapp.com/api/youtube/wrap-up'
 			)
 			setWrapUpData(data)
 		}

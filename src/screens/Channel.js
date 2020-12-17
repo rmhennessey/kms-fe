@@ -18,7 +18,7 @@ const Channel = ({ match }) => {
 	const getChannelInfo = async () => {
 		try {
 			const response = await axios.get(
-				`http://localhost:5000/api/youtube/playlist/${id}`
+				`https://kms-be.herokuapp.com/api/youtube/playlist/${id}`
 			)
 
 			// console.log('data---------->', data)

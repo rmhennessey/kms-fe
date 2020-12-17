@@ -15,7 +15,9 @@ const KmsFeed = () => {
 
 	const getKmsData = async () => {
 		try {
-			const response = await axios.get(`http://localhost:5000/api/twitter/kms`)
+			const response = await axios.get(
+				`https://kms-be.herokuapp.com/api/twitter/kms`
+			)
 
 			// console.log('data---------->', data)
 			setKmsData(response)

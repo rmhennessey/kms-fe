@@ -8,7 +8,7 @@ const Shop = () => {
 
 	useEffect(() => {
 		const getTees = async () => {
-			const { data } = await axios.get('http://localhost:5000/api/shop')
+			const { data } = await axios.get('https://kms-be.herokuapp.com/api/shop')
 			setTees(data)
 		}
 		getTees()

@@ -1,6 +1,6 @@
 import React from 'react'
 // import Hero from '../components/Hero'
-import Ads from '../components/Ads'
+// import Ads from '../components/Ads'
 import TwitterFeed from '../components/TwitterFeed'
 import YouTubeHome from '../components/YouTubeHome'
 import Testimonials from '../components/Testimonials'
@@ -13,7 +13,7 @@ const Home = () => {
 		<div>
 			<HomeWorld />
 			<WrapUpMain />
-			<Ads />
+			{/* <Ads /> */}
 			<TwitterFeed />
 			<YouTubeHome />
 			<Testimonials />

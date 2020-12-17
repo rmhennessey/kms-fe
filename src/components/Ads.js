@@ -13,7 +13,7 @@ const Ads = () => {
 
 	useEffect(() => {
 		const getAds = async () => {
-			const { data } = await axios.get('http://localhost:5000/api/ads')
+			const { data } = await axios.get('https://kms-be.herokuapp.com/api/ads')
 			setAds(data)
 		}
 		getAds()

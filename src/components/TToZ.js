@@ -8,7 +8,7 @@ const TToZ = () => {
 	useEffect(() => {
 		const getCharacters = async () => {
 			const { data } = await axios.get(
-				'http://localhost:5000/api/characters/t-z'
+				'https://kms-be.herokuapp.com/api/characters/t-z'
 			)
 			setCharacters(data)
 		}

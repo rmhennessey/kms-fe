@@ -11,7 +11,9 @@ const Network = () => {
 
 	const getPlaylists = async () => {
 		try {
-			const response = await axios.get('http://localhost:5000/api/youtube')
+			const response = await axios.get(
+				'https://kms-be.herokuapp.com/api/youtube'
+			)
 
 			// console.log('data---------->', data)
 			setPlaylistData(response)

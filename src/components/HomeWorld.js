@@ -20,21 +20,21 @@ const HomeWorld = () => {
 			id='home-world'
 			fluid
 			css={{
-				// backgroundImage: `url(${PRES})`,
+				backgroundImage: `url(${HERO})`,
 				backgroundColor: 'white',
 				marginBottom: '50px',
 				paddingBottom: '12px',
 				[mq[0]]: {
 					backgroundImage: `url(${PHONE_SMALL})`,
 					backgroundRepeat: 'no-repeat',
-					height: '70vh',
+					height: '100vh',
 					width: '100%',
 					marginBottom: '30px',
 				},
 				[mq[1]]: {
 					backgroundImage: `url(${PHONE_XL})`,
 					backgroundRepeat: 'no-repeat',
-					height: '70vh',
+					height: '100vh',
 					width: '100%',
 					// marginBottom: '0px',
 					// paddingBottom: '12px',
@@ -42,7 +42,7 @@ const HomeWorld = () => {
 				[mq[2]]: {
 					backgroundImage: `url(${PHONE_X})`,
 					backgroundRepeat: 'no-repeat',
-					height: '70vh',
+					height: '100vh',
 					width: '100%',
 					marginBottom: '50px',
 					paddingBottom: '12px',
