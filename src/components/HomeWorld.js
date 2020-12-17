@@ -10,6 +10,7 @@ import IPAD from '../assets/hero_768x1024.jpg'
 import HERO_992 from '../assets/hero_992x1052.jpg'
 import IPAD_PRO from '../assets/hero_1024x1366.jpg'
 import HERO from '../assets/Minihane_Cast_Hero.jpg'
+import HERO_MED from '../assets/HERO_MED.jpg'
 
 const HomeWorld = () => {
 	const breakpoints = [320, 375, 414, 576, 768, 992, 1024, 1200]
@@ -40,7 +41,16 @@ const HomeWorld = () => {
 					// paddingBottom: '12px',
 				},
 				[mq[2]]: {
-					backgroundImage: `url(${PHONE_X})`,
+					backgroundImage: `url(${HERO_MED})`,
+					backgroundRepeat: 'no-repeat',
+					height: '100vh',
+					width: '100%',
+					marginBottom: '50px',
+					paddingBottom: '12px',
+				},
+				[mq[3]]: {
+					// backgroundImage: `url(${PHONE_X})`,
+					backgroundImage: `url(${HERO})`,
 					backgroundRepeat: 'no-repeat',
 					height: '100vh',
 					width: '100%',
@@ -48,19 +58,22 @@ const HomeWorld = () => {
 					paddingBottom: '12px',
 				},
 				[mq[4]]: {
-					backgroundImage: `url(${IPAD})`,
+					// backgroundImage: `url(${IPAD})`,
+					backgroundImage: `url(${HERO})`,
 					backgroundRepeat: 'no-repeat',
 					height: '70vh',
 					width: '100%',
 				},
 				[mq[5]]: {
-					backgroundImage: `url(${HERO_992})`,
+					// backgroundImage: `url(${HERO_992})`,
+					backgroundImage: `url(${HERO})`,
 					backgroundRepeat: 'no-repeat',
 					height: '70vh',
 					width: '100%',
 				},
 				[mq[6]]: {
-					backgroundImage: `url(${IPAD_PRO})`,
+					// backgroundImage: `url(${IPAD_PRO})`,
+					backgroundImage: `url(${HERO})`,
 					backgroundRepeat: 'no-repeat',
 					height: '70vh',
 					width: '100%',

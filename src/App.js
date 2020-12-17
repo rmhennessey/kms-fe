@@ -17,17 +17,17 @@ const App = () => {
 	return (
 		<Router>
 			<Header />
-			<Container>
-				<Route path='/' component={Home} exact />
-				<Route path='/miniverse' component={World} exact />
-				<Route path='/network' component={Network} exact />
-				<Route path='/network/:slug/:id' component={Channel} />
-				<Route path='/watch/:id/:slug' component={Watch} />
-				<Route path='/shop' component={Shop} exact />
-				<Route path='/kirk' component={KirkFeed} exact />
-				<Route path='/wrap' component={WrapUpMain} exact />
-				{/* <Route path='/playlists' component={Playlists} exact /> */}
-			</Container>
+
+			<Route path='/' component={Home} exact />
+			<Route path='/miniverse' component={World} exact />
+			<Route path='/network' component={Network} exact />
+			<Route path='/network/:slug/:id' component={Channel} />
+			<Route path='/watch/:id/:slug' component={Watch} />
+			<Route path='/shop' component={Shop} exact />
+			<Route path='/kirk' component={KirkFeed} exact />
+			<Route path='/wrap' component={WrapUpMain} exact />
+			{/* <Route path='/playlists' component={Playlists} exact /> */}
+
 			<Footer />
 		</Router>
 	)
