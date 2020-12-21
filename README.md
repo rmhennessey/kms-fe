@@ -1,3 +1,11 @@
+# kms-fe
+
+React frontend for a multi-media podcast website (www.podcastjesus.com)
+
+Built with React-Bootstrap and styled with Emotion
+
+Connects to Node/Express backend (Serves the React frotend (repo: https://github.com/rmhennessey/kms-be))
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
